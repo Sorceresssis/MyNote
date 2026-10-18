@@ -1,0 +1,11 @@
+# Editor directories and files
+.vscode/*
+.obsidian/*
+.idea/*
+
+node_modules
+
+.vitepress/dist
+.vitepress/cache
+
+/index.md

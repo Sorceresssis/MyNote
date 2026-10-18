@@ -1,0 +1,33 @@
+.VPDoc h2,
+.VPDoc h3,
+.VPDoc h4,
+.VPDoc h5,
+.VPDoc h6 {
+  display: flex;
+  align-items: center;
+}
+
+.heading-number {
+  user-select: none;
+  margin-right: 0.5em;
+}
+
+.VPDocOutline ul {
+  counter-reset: section;
+}
+
+.VPDocOutline li {
+  counter-increment: section;
+  list-style: none;
+  position: relative;
+}
+
+.VPDocOutline li::before {
+  content: counters(section, ".") ". ";
+  position: absolute;
+  left: -1.5em;
+}
+
+.VPSidebar h2::before {
+  content: '' !important;
+}
